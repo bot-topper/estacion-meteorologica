@@ -2,10 +2,6 @@ import java.util.ArrayList;
 
 /**
  * Registros de temperaturas diarios de una estacion meteorológica
-<<<<<<< HEAD
- * gvbhjn
-=======
->>>>>>> parent of 5fd0ef0 (ojefko)
  */
 public class MedicionesTemperaturas
 {
