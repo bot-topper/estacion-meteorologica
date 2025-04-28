@@ -2,6 +2,10 @@ import java.util.ArrayList;
 
 /**
  * Registros de temperaturas diarios de una estacion meteorológica
+<<<<<<< HEAD
+ * gvbhjn
+=======
+>>>>>>> parent of 5fd0ef0 (ojefko)
  */
 public class MedicionesTemperaturas
 {
@@ -25,7 +29,8 @@ public class MedicionesTemperaturas
      * y la lista de registros se inicializa vacía (sin mediciones).
      * Precondición: 
      *  - dia debe ser un día válido (entre 1 y 31)
-     *  - mes debe ser un mes válido (entre 1 y 12)
+     *
+     * - mes debe ser un mes válido (entre 1 y 12)
      */
     public MedicionesTemperaturas(int dia, int mes) {
         assert dia >= 1 && dia <= 31;
