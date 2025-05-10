@@ -41,6 +41,9 @@ public class MedicionesTemperaturas
      * Agrega una temperatura al registro de temperaturas
      */
     public void agregarRegistro(int nuevaTemperatura) {
+        int ceroAbsoluto = -243;
+        assert nuevaTemperatura >= ceroAbsoluto ;
+        
         registros.add(new Integer(nuevaTemperatura));
     }
     
@@ -56,6 +59,30 @@ public class MedicionesTemperaturas
             System.out.println(temperatura + "C");
             pos = pos + 1;
         }
+    }
+    
+    public int canttempextrem()
+    {
+        int counter = 0;
+        
+        for(Integer temp :registros)
+        {
+            if(temp < -15 || temp > 35){
+                counter += 1;
+            }
+        }
+        return counter;
+    }
+    
+    public float PromedioDeTemp()
+    {
+        int tam = registros.size();
+        float promedio = 0;
+        for (Integer prom: registros){
+            promedio = promedio + prom;
+        }
+        promedio = promedio / tam;
+        return promedio; 
     }
     
 }
